@@ -1,0 +1,13 @@
+name = input('How is your name? ')
+print(f"Hello, {name}")
+mood = input('How are you?')
+print(f"i'm {mood} too")
+age = int(input('How old are you? '))
+if age > 20:
+    age_difference = age - 20
+    print(f"Wow, you're {age_difference} older than me")
+if age < 20:
+    age_difference = 20 - age
+    print(f"Haha, you're {age_difference} younger than me")
+if age == 20:
+    print('Cool! We are the same age!')
