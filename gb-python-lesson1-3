@@ -1,0 +1,7 @@
+n = input('Enter the number 0-9: ')
+print("Super! Let's say you entered the number n. "
+      "Now I will calculate how much will be n + nn + nnn ")
+nn = int(n + n)
+nnn = int (n + n + n)
+result = int(n) + nn + nnn
+print(f"{n} + {nn} + {nnn} = {result}")
