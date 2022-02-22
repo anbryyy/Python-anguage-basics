@@ -1,10 +1,12 @@
-number = int(input('Введите целое роложительное число: '))
-num_stat = number
-integer = 0
-while number > 0:
-    rem = number % 10
-    print(rem, end=" ")
-    integer = rem if rem > integer else integer
-    number = number // 10
-    print('')
-print(f"{integer}наибольшая цифра в числе {num_stat}")
+num = int(input('Введите целое положительное число: '))
+num_max = 0
+while num > 0:
+# временная переменная позволяет вам сохранить цифру который вы получили от num:
+    n = num % 10
+    if n > num_max:
+        num_max = n
+    else:
+        num_max = num_max
+    #после того как мы поработали с одним мы естественно отбрасываем это число
+        num = num // 10 # берем только целую часть
+print(num_max)
