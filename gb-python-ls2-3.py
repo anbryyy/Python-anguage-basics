@@ -5,3 +5,5 @@ month = int(input('Enter the month number: '))
 if month in d_seasons:
     print(l_seasons[month - 1])
     print(d_seasons[month])
+elso:
+    print('Invalid value')
